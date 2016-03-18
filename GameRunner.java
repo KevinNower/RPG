@@ -71,6 +71,7 @@ public abstract class GameRunner {
         System.out.println();
 
         int choice = userInput.nextInt();
+        System.out.println();
 
         if(choice == 1) {
             System.out.println("Congrats, you are a Berzerker.");
@@ -96,10 +97,22 @@ public abstract class GameRunner {
         else if(choice == 8) {
             System.out.println("Congrats, you are a Knight.");
         }
-        else {
+        else if(choice > 8) {
             System.out.println("I mean, you can try and cheat the system, but it won't do you much good. Just sayin.");
             System.out.println("Please actually choose next time.");
             System.exit(0);
+        }
+        else {
+            
+            try{
+                
+            }
+            
+            catch(java.util.InputMismatchException x) {
+                System.err.println("I mean, you can try and cheat the system, but it won't do you much good. Just sayin.");
+                System.err.println("Please actually choose next time.");
+                System.exit(0);
+            }
         }
 
     }
