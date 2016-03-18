@@ -5,8 +5,12 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ChailmailChestpiece extends MediumArmor
+public class ChainmailChestpiece extends MediumArmor
 {
+    public ChainmailChestpiece() {
+        super.itemName = "Chainmail Chestpiece";
+    }
+    
     public boolean blocked() {
         return false;
     }

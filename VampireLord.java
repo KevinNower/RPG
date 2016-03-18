@@ -8,7 +8,7 @@
 public class VampireLord extends Enemy
 {
    public VampireLord() {
-       enemyHealth = 50;
+       hp = 50;
        enemyName = "Vampire Lord";
     }
 }

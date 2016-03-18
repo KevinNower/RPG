@@ -7,6 +7,10 @@
  */
 public class ChainmailHelmet extends MediumArmor
 {
+    public ChainmailHelmet() {
+        super.itemName = "Chainmail Helmet";
+    }
+    
     public boolean blocked() {
         return false;
     }

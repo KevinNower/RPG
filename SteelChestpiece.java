@@ -7,6 +7,10 @@
  */
 public class SteelChestpiece extends HeavyArmor
 {
+    public SteelChestpiece() {
+        super.itemName = "Steel Chestpiece";
+    }
+    
     public boolean blocked() {
         return false;
     }

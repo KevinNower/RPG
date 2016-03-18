@@ -7,6 +7,10 @@
  */
 public class LeatherBoots extends LightArmor
 {
+    public LeatherBoots() {
+        super.itemName = "Leather Boots";
+    }
+    
     public boolean blocked() {
         return false;
     }

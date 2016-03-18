@@ -7,6 +7,10 @@
  */
 public class LeatherChestpiece extends LightArmor
 {
+    public LeatherChestpiece() {
+        super.itemName = "Leather Chestpiece";
+    }
+    
     public boolean blocked() {
         return false;
     }

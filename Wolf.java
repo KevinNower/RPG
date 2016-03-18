@@ -8,7 +8,7 @@
 public class Wolf extends Enemy
 {
    public Wolf() {
-       enemyHealth = 20;
+       hp = 20;
        enemyName = "Wolf";
     }
 }

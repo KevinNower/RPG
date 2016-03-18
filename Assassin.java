@@ -7,7 +7,7 @@
  */
 public class Assassin extends Enemy{
    public Assassin() {
-       enemyHealth = 35;
+       hp = 35;
        enemyName = "Assassin";
     }
 }

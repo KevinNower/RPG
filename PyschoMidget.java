@@ -7,7 +7,7 @@
  */
 public class PyschoMidget extends Summon
 {
-  public PyschoMidget() {
-      
+    public PyschoMidget() {
+
     }
 }

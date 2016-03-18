@@ -8,7 +8,7 @@
 
 public class Player extends Character{
     public Player (String firstName_,String lastName_, String middleInitial_, int intelligence_, int charisma_,
-    int strength_, int dexterity_, String race_, int age_) {
+    int strength_, int dexterity_, String race_, int age_, PlayerClass playerClass_) {
         String firstName = firstName_;
         String lastName = lastName_;
         String middleInitial = middleInitial_;
@@ -18,5 +18,6 @@ public class Player extends Character{
         int strength = strength_;
         int dexterity = dexterity_;
         int age = age_;
+        PlayerClass playerClass = playerClass_;
     }
 }

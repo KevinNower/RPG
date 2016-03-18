@@ -7,6 +7,10 @@
  */
 public class SteelLeggings extends HeavyArmor
 {
+    public SteelLeggings() {
+        super.itemName = "Steel Leggings";
+    }
+    
     public boolean blocked() {
         return false;
     }

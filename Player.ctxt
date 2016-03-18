@@ -1,4 +1,4 @@
 #BlueJ class context
-comment0.params=firstName_\ lastName_\ middleInitial_\ intelligence_\ charisma_\ strength_\ dexterity_\ race_\ age_
-comment0.target=Player(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int,\ java.lang.String,\ int)
+comment0.params=firstName_\ lastName_\ middleInitial_\ intelligence_\ charisma_\ strength_\ dexterity_\ race_\ age_\ playerClass_
+comment0.target=Player(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int,\ java.lang.String,\ int,\ PlayerClass)
 numComments=1

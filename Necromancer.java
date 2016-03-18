@@ -9,6 +9,6 @@ public class Necromancer extends Enemy
 {
    public Necromancer() {
        enemyName = "Necromancer";
-       enemyHealth = 30;
+       hp = 30;
     }
 }
