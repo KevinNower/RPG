@@ -7,7 +7,7 @@
  */
 public class IronSpear extends Weapon implements BasicBlade{
     public void IronSpear() {
-
+        super.itemName = "Iron Spear";
     }
     
     public void slash() {

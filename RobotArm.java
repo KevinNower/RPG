@@ -7,7 +7,7 @@
  */
 public class RobotArm extends Weapon implements BluntWeapon{
     public void RobotArm() {
-        
+        super.itemName = "Robot Arm";
     }
     
     public void bash() {

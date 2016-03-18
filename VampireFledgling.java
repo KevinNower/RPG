@@ -9,5 +9,7 @@ public class VampireFledgling extends Enemy
 {
    public VampireFledgling() {
        enemyHealth = 35;
+       enemyName = "Vampire Fledgling";
+       
     }
 }

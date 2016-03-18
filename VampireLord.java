@@ -9,5 +9,6 @@ public class VampireLord extends Enemy
 {
    public VampireLord() {
        enemyHealth = 50;
+       enemyName = "Vampire Lord";
     }
 }

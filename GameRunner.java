@@ -61,5 +61,7 @@ public abstract class GameRunner {
         System.out.println("You wake up in a dark room, surrounded by");
         System.out.println("a bunch of old weapons. Which one would you like");
         System.out.println("to choose?");
+        
+        
     }
 }

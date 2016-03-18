@@ -7,7 +7,7 @@
  */
 public class PoisonedDagger extends Weapon implements BasicBlade{
     public void PoisonedDagger() {
-
+        super.itemName = "poisoned Dagger";
     }
 
     public void slash() {

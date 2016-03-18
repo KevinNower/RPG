@@ -6,5 +6,7 @@
  * @version (a version number or a date)
  */
 public class WoodenStaff extends Weapon{
-   
+    public WoodenStaff() {
+        super.itemName = "Wooden Staff";
+    }
 }

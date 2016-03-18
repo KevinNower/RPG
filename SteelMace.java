@@ -7,7 +7,7 @@
  */
 public class SteelMace extends Weapon implements BluntWeapon{
     public void SteelMace() {
-        
+        super.itemName = "Steel Mace";
     }
     
     public void bash() {

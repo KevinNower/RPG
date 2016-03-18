@@ -6,8 +6,8 @@
  * @version (a version number or a date)
  */
 public class IronMace extends Weapon implements BluntWeapon{
-    public void IronMace() {
-
+    public IronMace() {
+        super.itemName = "Iron Mace";
     }
 
     public void bash() {

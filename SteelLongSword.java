@@ -7,7 +7,7 @@
  */
 public class SteelLongSword extends Weapon implements BasicBlade{
     public void SteelLongSword() {
-
+        super.itemName = "Steel Long Sword";
     }
 
     public void slash() {

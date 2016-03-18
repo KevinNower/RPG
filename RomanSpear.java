@@ -7,7 +7,7 @@
  */
 public class RomanSpear extends Weapon implements BasicBlade{
     public void RomanSpear() {
-        
+        super.itemName = "Roman Spear";
     }
     
     public void slash() {

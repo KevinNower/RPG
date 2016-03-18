@@ -6,5 +6,7 @@
  * @version (a version number or a date)
  */
 public class CompoundBow extends Weapon{
-  
+    public CompoundBow() {
+        super.itemName = "Compound Bow";
+    }
 }
