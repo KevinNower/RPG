@@ -9,9 +9,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public abstract class GameRunner {
 
-    public static void main() {
+    public void main() {
         Scanner userInput = new Scanner(System.in);
-
+        
         RustyMace rustyMace = new RustyMace();
         RustyDagger rustyDagger = new RustyDagger();
         TwigWand twigWand = new TwigWand();
@@ -20,41 +20,7 @@ public abstract class GameRunner {
         RustySpear rustySpear = new RustySpear();
         RustyShortSword rustyShortSword = new RustyShortSword();
         RustyLongSword rustyLongSword = new RustyLongSword();
-
-        IronMace ironMace = new IronMace();
-        IronDagger ironDagger = new IronDagger();
-        WoodenStaff woodenStaff = new WoodenStaff();
-        IronWrench ironWrench = new IronWrench();
-        ShortBow shortBow = new ShortBow();
-        IronSpear ironSpear = new IronSpear();
-        IronShortSword ironShortSword = new IronShortSword();
-        IronLongSword ironLongSword = new IronLongSword();
-
-        SteelMace steelMace = new SteelMace();
-        SteelDagger steelDagger = new SteelDagger();
-        ElementalStaff elementalStaff = new ElementalStaff();
-        SteelWrench steelWrench = new SteelWrench();
-        CompoundBow compoundBow = new CompoundBow();
-        SteelSpear steelSpear = new SteelSpear();
-        SteelShortSword steelShortSword = new SteelShortSword();
-        SteelLongSword steelLongSword = new SteelLongSword();
-
-        CementAndRebar cementAndRebar = new CementAndRebar();
-        PoisonedDagger poisonedDagger = new PoisonedDagger();
-        GodsStaff godsStaff = new GodsStaff();
-        RobotArm robotArm = new RobotArm();
-        TriShotBow triShotBow = new TriShotBow();
-        RomanSpear RomanSpear = new RomanSpear();
-        SwordGauntlets swordGauntlets = new SwordGauntlets();
-        BroadSword broadSword = new BroadSword();
-
-        Wolf wolf = new Wolf();
-        Assassin assassin = new Assassin();
-        Bandit bandit = new Bandit();
-        VampireFledgling vampireFledgling = new VampireFledgling();
-        VampireLord vampireLord = new VampireLord();
-        Necromancer necromancer = new Necromancer();
-
+       
         System.out.println("You wake up in a dark room, surrounded by");
         System.out.println("a bunch of old weapons. Which one would you like");
         System.out.println("to choose?");
@@ -70,50 +36,59 @@ public abstract class GameRunner {
         System.out.println("8." + " " + rustyLongSword.getName());
         System.out.println();
 
-        int choice = userInput.nextInt();
-        System.out.println();
+        if(userInput.hasNextInt()) {
+            int choice = userInput.nextInt();
+            System.out.println();
 
-        if(choice == 1) {
-            System.out.println("Congrats, you are a Berzerker.");
-        }
-        else if(choice == 2) {
-            System.out.println("Congrats, you are an Assassin.");
-        }
-        else if(choice == 3) {
-            System.out.println("Congrats, you are a Mage.");
-        }
-        else if(choice == 4) {
-            System.out.println("Congrats, you are an Engineer.");
-        }
-        else if(choice == 5) {
-            System.out.println("Congrats, you are a Ranger.");
-        }
-        else if(choice == 6) {
-            System.out.println("Congrats, you are a Lancer.");
-        }
-        else if(choice == 7) {
-            System.out.println("Congrats, you are a Swordsman.");
-        }
-        else if(choice == 8) {
-            System.out.println("Congrats, you are a Knight.");
-        }
-        else if(choice > 8) {
-            System.out.println("I mean, you can try and cheat the system, but it won't do you much good. Just sayin.");
-            System.out.println("Please actually choose next time.");
-            System.exit(0);
-        }
-        else {
-            
-            try{
-                
+            if(choice == 1) {
+                System.out.println("Congrats, you are a Berzerker.");
+                Backpack.storeItem(rustyMace);
             }
-            
-            catch(java.util.InputMismatchException x) {
-                System.err.println("I mean, you can try and cheat the system, but it won't do you much good. Just sayin.");
-                System.err.println("Please actually choose next time.");
+            else if(choice == 2) {
+                System.out.println("Congrats, you are an Assassin.");
+                Backpack.storeItem(rustyDagger);
+            }
+            else if(choice == 3) {
+                System.out.println("Congrats, you are a Mage.");
+                Backpack.storeItem(twigWand);
+            }
+            else if(choice == 4) {
+                System.out.println("Congrats, you are an Engineer.");
+                Backpack.storeItem(rustyWrench);
+            }
+            else if(choice == 5) {
+                System.out.println("Congrats, you are a Ranger.");
+                Backpack.storeItem(woodenBow);
+            }
+            else if(choice == 6) {
+                System.out.println("Congrats, you are a Lancer.");
+                Backpack.storeItem(rustySpear);
+            }
+            else if(choice == 7) {
+                System.out.println("Congrats, you are a Swordsman.");
+                Backpack.storeItem(rustyShortSword);
+            }
+            else if(choice == 8) {
+                System.out.println("Congrats, you are a Knight.");
+                Backpack.storeItem(rustyLongSword);
+            }
+            else {
+                System.out.println("I mean, you can try and cheat the system, but it won't do you much good. Just sayin.");
+                System.out.println("Please actually choose next time.");
                 System.exit(0);
             }
+            
+            System.out.println("You store your weapon in an old beat up sack you find in the room");
+            
         }
+        
+        else {
+            System.out.println();
+            System.out.println("Please enter an integer next time.");
+            System.exit(0);
+        }
+        
+        
 
     }
 }
